@@ -3,7 +3,7 @@ import { Component } from "react";
 class offersMainComp extends Component {
   render() {
     return (
-      <div className="flex flex-wrap flex-col items-center p-12 rounded-md hover:cursor-pointer">
+      <div className="bg-slate-200 flex flex-wrap flex-col items-center p-12 rounded-md hover:cursor-pointer">
         <img
           src={this.props.offers[0].src}
           alt=""

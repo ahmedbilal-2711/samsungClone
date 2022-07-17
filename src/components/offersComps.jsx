@@ -1,6 +1,5 @@
 import { Component } from "react";
 
-
 class offersComps extends Component {
 
   render() {
