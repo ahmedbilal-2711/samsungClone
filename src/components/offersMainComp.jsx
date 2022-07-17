@@ -3,11 +3,13 @@ import { Component } from "react";
 class offersMainComp extends Component {
   render() {
     return (
-      <div>
+      <div className="flex flex-wrap flex-col items-center p-12 rounded-md hover:cursor-pointer">
         <img
-          src="	https://images.samsung.com/is/image/samsung/assets/pk/684x684-celeb.jpg?$684_684_JPG$"
+          src={this.props.offers[0].src}
           alt=""
         />
+        <p>{this.props.offers[0].name}</p>
+        <p>{this.props.offers[0].price}</p>
       </div>
     );
   }

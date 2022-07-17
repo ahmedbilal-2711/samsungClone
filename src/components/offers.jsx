@@ -25,10 +25,10 @@ class offers extends Component {
           </ul>
         </nav>
         <div className="grid grid-cols-2 gap-4 p-3 pt-6 ">
-          <OffMainComp />
+          <OffMainComp offers={this.props.offers} />
           <div className="grid grid-cols-2 gap-4">
             {this.props.coms.map((com) => (
-              <OFFCOMP key={com.id} />
+              <OFFCOMP key={com.id} comNo={com.comNo} offers={this.props.offers} />
             ))}
           </div>
         </div>
