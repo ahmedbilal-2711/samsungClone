@@ -2,7 +2,9 @@ import "./App.css";
 import IS from "./components/imageSlider.jsx";
 import NAV from "./components/navBar.jsx";
 import OFFERS from "./components/offers.jsx";
-import Mobiles from "./components/mobiles/mobileCom.jsx";
+import TV from "./components/tvCom.jsx";
+import Mobiles from "./components/mobileCom.jsx";
+import HApp from "./components/homeAppCom";
 import React, { Component } from "react";
 
 class App extends Component {
@@ -94,6 +96,8 @@ class App extends Component {
           miniNavs={this.state.miniNavs}
           id={this.state.miniNavs[1].key}
         />
+        <TV miniNavs={this.state.miniNavs} id={this.state.miniNavs[2].key} />
+        <HApp miniNavs={this.state.miniNavs} id={this.state.miniNavs[3].key} />
       </React.Fragment>
     );
   }

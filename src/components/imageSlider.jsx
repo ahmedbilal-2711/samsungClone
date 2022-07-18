@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+// import React, { Component } from "react";
 const imageSlider = () => {
   const styleBtn =
     "bg-gray-500/75 flex justify-between w-12 h-12 px-4 text-xl py-2 hover:bg-black text-center hover:text-white rounded-full";
