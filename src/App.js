@@ -2,6 +2,7 @@ import "./App.css";
 import IS from "./components/imageSlider.jsx";
 import NAV from "./components/navBar.jsx";
 import OFFERS from "./components/offers.jsx";
+import Mobiles from "./components/mobiles/mobileCom.jsx";
 import React, { Component } from "react";
 
 class App extends Component {
@@ -39,6 +40,44 @@ class App extends Component {
         price: "just launched",
       },
     ],
+    miniNavs: [
+      {
+        key: 0,
+        head: "This Month's Pick",
+        nav: [
+          { id: 0, li: "Mobile" },
+          { id: 1, li: "TV&AV" },
+          { id: 2, li: "Home Appliances" },
+        ],
+      },
+      {
+        key: 1,
+        head: "Mobile",
+        nav: [
+          { id: 0, li: "Galaxy S22 Ultra" },
+          { id: 1, li: "Galaxy Z Flip3 5G" },
+          { id: 2, li: "Galaxy Watch 4" },
+          { id: 3, li: "Galaxy Buds2" },
+        ],
+      },
+      {
+        key: 2,
+        head: "TV & Sound",
+        nav: [
+          { id: 0, li: "Neo QLED" },
+          { id: 1, li: "QLED" },
+          { id: 2, li: "Crystal UHD" },
+        ],
+      },
+      {
+        key: 3,
+        head: "Home Applicances",
+        nav: [
+          { id: 0, li: "Washing Machine" },
+          { id: 1, li: "Refrigerators" },
+        ],
+      },
+    ],
   };
 
   render() {
@@ -46,7 +85,15 @@ class App extends Component {
       <React.Fragment>
         <NAV />
         <IS />
-        <OFFERS coms={this.state.coms} offers={this.state.offers} />
+        <OFFERS
+          coms={this.state.coms}
+          offers={this.state.offers}
+          miniNavs={this.state.miniNavs}
+        />
+        <Mobiles
+          miniNavs={this.state.miniNavs}
+          id={this.state.miniNavs[1].key}
+        />
       </React.Fragment>
     );
   }

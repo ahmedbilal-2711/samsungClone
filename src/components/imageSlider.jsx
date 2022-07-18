@@ -8,7 +8,7 @@ const imageSlider = () => {
         <button className={styleBtn}>&lt;</button>
         <button className={styleBtn}>&gt;</button>
       </div>
-      <img src="https://picsum.photos/1400/600" alt="" />
+      <img src="https://picsum.photos/1600/800" alt="" />
     </div>
   );
 };
