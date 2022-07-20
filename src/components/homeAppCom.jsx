@@ -4,7 +4,7 @@ const homeAppCom = (props) => {
   return (
     <div>
       <Space />
-      <div className="text-black w-[1499px] h-[840px] bg-cover bg-center bg-no-repeat bg-[url('//images.samsung.com/is/image/samsung/pk-feature-washer-ww80j5413iw--60875576?$FB_TYPE_A_JPG$')]">
+      <div className="text-black w-screen h-[840px] bg-cover bg-center bg-no-repeat bg-[url('//images.samsung.com/is/image/samsung/pk-feature-washer-ww80j5413iw--60875576?$FB_TYPE_A_JPG$')]">
         <MiniNav MN={props.miniNavs} id={props.id} />
         <div className="relative top-[475px] flex flex-wrap flex-col items-center">
           <p className="font-bold text-5xl pb-5">

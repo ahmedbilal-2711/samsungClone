@@ -1,4 +1,8 @@
 // import { Component } from "react";
+import { FiShoppingCart } from "react-icons/fi";
+import { BsPerson } from "react-icons/bs";
+import { BsSearch } from "react-icons/bs";
+
 const navbar = () => {
   const ulStyle = "w-1/3 flex text-sm";
   return (
@@ -35,13 +39,13 @@ const navbar = () => {
           ForBuisness
         </li>
         <li className="px-2 py-2 font-semibold hover:cursor-pointer hover:rounded-3xl hover:bg-black hover:text-white">
-          Search
+          <BsSearch/>
         </li>
         <li className="px-2 py-2 font-semibold hover:cursor-pointer hover:rounded-3xl hover:bg-black hover:text-white">
-          Shop
+          <FiShoppingCart/>
         </li>
         <li className="px-2 py-2 font-semibold hover:cursor-pointer hover:rounded-3xl hover:bg-black hover:text-white">
-          Account
+          <BsPerson/>
         </li>
       </ul>
     </div>

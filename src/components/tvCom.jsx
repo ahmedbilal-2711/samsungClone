@@ -4,7 +4,7 @@ const tvCom = (props) => {
   return (
     <div>
       <Space />
-      <div className="text-white w-[1499px] h-[840px] bg-cover bg-center bg-no-repeat bg-[url('//images.samsung.com/is/image/samsung/assets/pk/tvs/qled-tv/highlights/2021-neo-qled-tv-f01-intro-pc.png?$FB_TYPE_A_PNG$')]">
+      <div className="text-white w-screen h-[840px] bg-cover bg-center bg-no-repeat bg-[url('//images.samsung.com/is/image/samsung/assets/pk/tvs/qled-tv/highlights/2021-neo-qled-tv-f01-intro-pc.png?$FB_TYPE_A_PNG$')]">
         <MiniNav MN={props.miniNavs} id={props.id} />
         <div className="relative top-[515px] flex flex-wrap flex-col items-center">
           <p className="font-bold text-5xl pb-5">
