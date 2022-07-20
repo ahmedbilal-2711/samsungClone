@@ -1,9 +1,8 @@
 import MiniNav from "./miniNav";
-import Space from "./spaceCom";
+import Wrapper from "./boxWrappers";
 const mobileCom = (props) => {
   return (
-    <div>
-      <Space />
+    <Wrapper>
       <div className="flex flex-wrap flex-col items-center">
         <MiniNav MN={props.miniNavs} id={props.id} />
         <img
@@ -20,8 +19,7 @@ const mobileCom = (props) => {
           </button>
         </div>
       </div>
-      <Space />
-    </div>
+      </Wrapper>
   );
 };
 

@@ -84,7 +84,7 @@ class App extends Component {
 
   render() {
     return (
-      <React.Fragment>
+      <div>
         <NAV />
         <IS />
         <OFFERS
@@ -98,7 +98,7 @@ class App extends Component {
         />
         <TV miniNavs={this.state.miniNavs} id={this.state.miniNavs[2].key} />
         <HApp miniNavs={this.state.miniNavs} id={this.state.miniNavs[3].key} />
-      </React.Fragment>
+      </div>
     );
   }
 }
