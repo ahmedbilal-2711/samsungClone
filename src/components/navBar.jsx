@@ -6,7 +6,7 @@ import { BsSearch } from "react-icons/bs";
 const navbar = () => {
   const ulStyle = "w-1/3 flex text-sm";
   return (
-    <div className="w-4/6 m-auto flex bg-white p-5 pt-6 pb-20 justify-between">
+    <div className="w-5/6 m-auto flex bg-white p-5 pt-6 pb-20 justify-between">
       <ul className={"justify-start hover:cursor-pointer" + ulStyle}>
         <h5 className="text-xl font-bold pr-20">Samsung</h5>
         <li className="px-2 py-2 font-semibold hover:cursor-pointer hover:rounded-3xl hover:bg-black hover:text-white">
@@ -39,13 +39,13 @@ const navbar = () => {
           ForBuisness
         </li>
         <li className="px-2 py-2 font-semibold hover:cursor-pointer hover:rounded-3xl hover:bg-black hover:text-white">
-          <BsSearch/>
+          <BsSearch />
         </li>
         <li className="px-2 py-2 font-semibold hover:cursor-pointer hover:rounded-3xl hover:bg-black hover:text-white">
-          <FiShoppingCart/>
+          <FiShoppingCart />
         </li>
         <li className="px-2 py-2 font-semibold hover:cursor-pointer hover:rounded-3xl hover:bg-black hover:text-white">
-          <BsPerson/>
+          <BsPerson />
         </li>
       </ul>
     </div>
