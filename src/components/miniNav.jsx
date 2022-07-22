@@ -7,7 +7,7 @@ const miniNav = (props) => {
           {props.MN[props.id].nav.map((com) => (
             <li
               key={com.id}
-              className="px-4 text-lg py-0.5 active:underline-offset-1 hover:text-gray-600 hover:cursor-pointer font-semibold"
+              className="hover:underline px-4 text-lg py-0.5 hover:underline-offset-8 hover:text-gray-600 hover:cursor-pointer font-semibold"
             >
               {com.li}
             </li>
