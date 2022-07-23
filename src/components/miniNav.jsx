@@ -6,6 +6,7 @@ const miniNav = (props) => {
         <ul className="flex">
           {props.MN[props.id].nav.map((com) => (
             <li
+              onClick={props.onClickNav}
               key={com.id}
               className="hover:underline px-4 text-lg py-0.5 hover:underline-offset-8 hover:text-gray-600 hover:cursor-pointer font-semibold"
             >

@@ -1,8 +1,6 @@
 // import React, { Component } from "react";
 import Wrapper from "./boxWrappers";
 const imageSlider = (props) => {
-  const styleBtn =
-    "bg-gray-500/75 float-left  z-20 w-12 h-12 px-4 text-xl py-2 hover:bg-black text-center hover:text-white rounded-full";
   return (
     <Wrapper>
       {/* <div className="flex absolute justify-end align-bottom z-20"> */}
