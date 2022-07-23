@@ -3,16 +3,18 @@ import Wrapper from "./boxWrappers";
 const mobileCom = (props) => {
   return (
     <Wrapper>
-      <MiniNav MN={props.miniNavs} id={props.id} />
+      <MiniNav
+        MN={props.miniNavs}
+        onClickNav={props.onClickMNav}
+        id={props.id}
+      />
       <div className="flex flex-wrap flex-col items-center">
         <img
-          className="w-1/2 mt-5"
-          src="//images.samsung.com/is/image/samsung/assets/pk/2203/home/Home_B_KV_IM-KV_743X418_pc.jpg?$LazyLoad_Home_JPG$"
+          className="w-[625px] mt-5 h-[260px]"
+          src={props.mobile[1]}
           alt=""
         />
-        <h1 className="font-bold text-5xl p-16 pb-2">
-          {props.miniNavs[props.id].nav[0].li}
-        </h1>
+        <h1 className="font-bold text-5xl p-16 pb-2">{props.mobile[0]}</h1>
         <div>
           <button className="w-36 bg-black hover:bg-gray-700 text-white p-2 rounded-2xl mb-11">
             Learn More
