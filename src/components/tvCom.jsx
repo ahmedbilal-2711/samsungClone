@@ -13,6 +13,7 @@ const TvCom = (props) => {
   //   }
   return (
     <Wrapper>
+<<<<<<< HEAD
       <div className={"flex flex-col text-white h-screen "}>
         <img
           src={props.tv[1]}
@@ -25,6 +26,11 @@ const TvCom = (props) => {
           onClickNav={props.onClickMNav}
         />
         <div className="flex flex-wrap flex-col justify-center h-screen items-center">
+=======
+      <div className="flex flex-col text-white h-screen bg-cover bg-center bg-no-repeat bg-[url('//images.samsung.com/is/image/samsung/assets/pk/tvs/qled-tv/highlights/2021-neo-qled-tv-f01-intro-pc.png?$FB_TYPE_A_PNG$')]">
+        <MiniNav MN={props.miniNavs} id={props.id} onClickNav={props.onClickMNav}/>
+        <div className="flex flex-wrap flex-col justify-end h-screen items-center">
+>>>>>>> bfea0c6064ae2ba1c2a78445482129cb9832e19c
           <p className="font-bold text-5xl pb-5">
             Greatness never ends, but evolves
           </p>

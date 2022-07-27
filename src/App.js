@@ -78,7 +78,11 @@ let App = () => {
       nav: [
         {
           id: 0,
+<<<<<<< HEAD
           src: "https:////images.samsung.com/is/image/samsung/assets/pk/home/NeoQLED_PC.png?$1440_810_JPG$",
+=======
+          src: "//images.samsung.com/is/image/samsung/assets/pk/tvs/qled-tv/highlights/2021-neo-qled-tv-f01-intro-pc.png?$FB_TYPE_A_PNG$",
+>>>>>>> bfea0c6064ae2ba1c2a78445482129cb9832e19c
           li: "Neo QLED",
         },
         {
@@ -106,7 +110,11 @@ let App = () => {
     miniNavs[1].nav[0].li,
     miniNavs[1].nav[0].src,
   ]);
+<<<<<<< HEAD
   const [tv, setTv] = useState(miniNavs[2].nav[0].li, miniNavs[2].nav[0].src);
+=======
+  const [tvSrc, setTvSrc] = useState(miniNavs[2].nav[0].src);
+>>>>>>> bfea0c6064ae2ba1c2a78445482129cb9832e19c
   // const [homeSrc, setHomeSrc] = useState(miniNavs[3].nav[0].src);
   // const [offersSrc, setOffersSrc] = useState(miniNavs[0].nav[0].src);
 
@@ -136,11 +144,15 @@ let App = () => {
               }, 100);
               break;
             case 2:
+<<<<<<< HEAD
               // eslint-disable-next-line no-loop-func
               setTimeout(() => {
                 setTv([elem.li, elem.src]);
               }, 100);
               // setTvSrc(elem.src);
+=======
+              setTvSrc(elem.src);
+>>>>>>> bfea0c6064ae2ba1c2a78445482129cb9832e19c
               break;
           }
         }
@@ -165,7 +177,11 @@ let App = () => {
         id={miniNavs[1].key}
       />
       <TV
+<<<<<<< HEAD
         tv={tv}
+=======
+        tvSrc={tvSrc}
+>>>>>>> bfea0c6064ae2ba1c2a78445482129cb9832e19c
         miniNavs={miniNavs}
         id={miniNavs[2].key}
         onClickMNav={onClickMNav}
