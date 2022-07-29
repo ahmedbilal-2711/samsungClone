@@ -9,40 +9,74 @@ import { useState } from "react";
 // import miniNav from "./components/miniNav";
 
 let App = () => {
-  let offers = [
-    {
-      src: "//images.samsung.com/is/image/samsung/assets/cn/homepage/PCD_B_KV_Merchandising_376x376_.png?$376_376_PNG$",
-      name: "Galaxy S22 Ultra",
-      price: "just launched",
-    },
-    {
-      src: "//images.samsung.com/is/image/samsung/assets/pk/A13-Desktop-version-Small-tile.png?$160_160_PNG$",
-      name: "Galaxy A13",
-      price: "just launched",
-    },
-    {
-      src: "//images.samsung.com/is/image/samsung/assets/pk/A03_Smalltile_Desktop.png?$160_160_PNG$",
-      name: "Galaxy A03",
-      price: "just launched",
-    },
-    {
-      src: "//images.samsung.com/is/image/samsung/assets/pk/S22_SmallTile_PC.png?$160_160_PNG$",
-      name: "Galaxy S22",
-      price: "just launched",
-    },
-    {
-      src: "//images.samsung.com/is/image/samsung/assets/pk/2202/home/images/HOME_B2_KV_Merchandising_160X160.png?$160_160_PNG$",
-      name: "Galaxy Z Flip3 5G",
-      price: "just launched",
-    },
-  ];
+  // let offers = ;
   let miniNavs = [
     {
       key: 0,
       head: "This Month's Pick",
       nav: [
-        { id: 0, li: "Mobile" },
-        { id: 1, li: "TV&AV" },
+        {
+          id: 0,
+          source: [
+            {
+              src: "//images.samsung.com/is/image/samsung/assets/cn/homepage/PCD_B_KV_Merchandising_376x376_.png?$376_376_PNG$",
+              name: "Galaxy S22 Ultra",
+              price: "just launched",
+            },
+            {
+              src: "//images.samsung.com/is/image/samsung/assets/pk/A13-Desktop-version-Small-tile.png?$160_160_PNG$",
+              name: "Galaxy A13",
+              price: "just launched",
+            },
+            {
+              src: "//images.samsung.com/is/image/samsung/assets/pk/A03_Smalltile_Desktop.png?$160_160_PNG$",
+              name: "Galaxy A03",
+              price: "just launched",
+            },
+            {
+              src: "//images.samsung.com/is/image/samsung/assets/pk/S22_SmallTile_PC.png?$160_160_PNG$",
+              name: "Galaxy S22",
+              price: "just launched",
+            },
+            {
+              src: "//images.samsung.com/is/image/samsung/assets/pk/2202/home/images/HOME_B2_KV_Merchandising_160X160.png?$160_160_PNG$",
+              name: "Galaxy Z Flip3 5G",
+              price: "just launched",
+            },
+          ],
+          li: "Mobile",
+        },
+        {
+          id: 1,
+          source: [
+            {
+              src: "//images.samsung.com/is/image/samsung/assets/pk/BIG-TILE-3-YEARS.jpg?$684_684_JPG$",
+              name: "All the care for 3 years",
+              price: "Now get 2 years additional warranty on selected TVs",
+            },
+            {
+              src: "//images.samsung.com/is/image/samsung/assets/pk/160-x-160.png-TV-4.png?$160_160_PNG$",
+              name: "Q70A QLED Smart 4K TV (2021)",
+              price: "Avail 2 years additional warranty",
+            },
+            {
+              src: "//images.samsung.com/is/image/samsung/assets/pk/160x160-Small-tile-Premiere.png?$160_160_PNG$",
+              name: "The Premiere",
+              price: "4K Laser Projector",
+            },
+            {
+              src: "//images.samsung.com/is/image/samsung/assets/pk/160-x-160-1.png?$160_160_PNG$",
+              name: "AU9000 Crystal UHD 4K Smart TV (2021)",
+              price: "Avail upto 12% off",
+            },
+            {
+              src: "//images.samsung.com/is/image/samsung/assets/pk/160x160-Small-tile-Freestyle.png?$160_160_PNG$",
+              name: "The Freestyle",
+              price: "Unexpected joy everywhere",
+            },
+          ],
+          li: "TV&AV",
+        },
         { id: 2, li: "Home Appliances" },
       ],
     },
@@ -78,11 +112,7 @@ let App = () => {
       nav: [
         {
           id: 0,
-<<<<<<< HEAD
           src: "https:////images.samsung.com/is/image/samsung/assets/pk/home/NeoQLED_PC.png?$1440_810_JPG$",
-=======
-          src: "//images.samsung.com/is/image/samsung/assets/pk/tvs/qled-tv/highlights/2021-neo-qled-tv-f01-intro-pc.png?$FB_TYPE_A_PNG$",
->>>>>>> bfea0c6064ae2ba1c2a78445482129cb9832e19c
           li: "Neo QLED",
         },
         {
@@ -101,8 +131,16 @@ let App = () => {
       key: 3,
       head: "Home Applicances",
       nav: [
-        { id: 0, li: "Washing Machine" },
-        { id: 1, li: "Refrigerators" },
+        {
+          id: 0,
+          src: "https:////images.samsung.com/is/image/samsung/assets/pk/Desktop_WM_1440-810_new.jpg?$1440_810_JPG$",
+          li: "Washing Machine",
+        },
+        {
+          id: 1,
+          src: "https:////images.samsung.com/is/image/samsung/assets/pk/p6_gro3/p6_initial_home/PF_KV_1440x810.jpg?$1440_810_JPG$",
+          li: "Refrigerators",
+        },
       ],
     },
   ];
@@ -110,14 +148,14 @@ let App = () => {
     miniNavs[1].nav[0].li,
     miniNavs[1].nav[0].src,
   ]);
-<<<<<<< HEAD
-  const [tv, setTv] = useState(miniNavs[2].nav[0].li, miniNavs[2].nav[0].src);
-=======
-  const [tvSrc, setTvSrc] = useState(miniNavs[2].nav[0].src);
->>>>>>> bfea0c6064ae2ba1c2a78445482129cb9832e19c
-  // const [homeSrc, setHomeSrc] = useState(miniNavs[3].nav[0].src);
-  // const [offersSrc, setOffersSrc] = useState(miniNavs[0].nav[0].src);
-
+  const [tv, setTv] = useState([miniNavs[2].nav[0].li, miniNavs[2].nav[0].src]);
+  const [home, setHome] = useState([
+    miniNavs[3].nav[0].li,
+    miniNavs[3].nav[0].src,
+  ]);
+  const [offers, setOffers] = useState([miniNavs[0].nav[0].source]);
+  
+  // console.log(miniNavs[0].nav[0].source);
   let coms = [
     { id: "com1", comNo: 1 },
     { id: "com2", comNo: 2 },
@@ -137,6 +175,9 @@ let App = () => {
           // eslint-disable-next-line default-case
           switch (comNo) {
             case 0:
+              setTimeout(() => {
+                setOffers([elem.source]);
+              }, 100);
               break;
             case 1:
               setTimeout(() => {
@@ -144,15 +185,18 @@ let App = () => {
               }, 100);
               break;
             case 2:
-<<<<<<< HEAD
               // eslint-disable-next-line no-loop-func
               setTimeout(() => {
                 setTv([elem.li, elem.src]);
               }, 100);
               // setTvSrc(elem.src);
-=======
-              setTvSrc(elem.src);
->>>>>>> bfea0c6064ae2ba1c2a78445482129cb9832e19c
+              break;
+            case 3:
+              // eslint-disable-next-line no-loop-func
+              setTimeout(() => {
+                setHome([elem.li, elem.src]);
+              }, 100);
+              // setTvSrc(elem.src);
               break;
           }
         }
@@ -177,16 +221,13 @@ let App = () => {
         id={miniNavs[1].key}
       />
       <TV
-<<<<<<< HEAD
         tv={tv}
-=======
-        tvSrc={tvSrc}
->>>>>>> bfea0c6064ae2ba1c2a78445482129cb9832e19c
         miniNavs={miniNavs}
         id={miniNavs[2].key}
         onClickMNav={onClickMNav}
       />
       <HApp
+        home={home}
         miniNavs={miniNavs}
         id={miniNavs[3].key}
         onClickMNav={onClickMNav}

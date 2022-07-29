@@ -4,7 +4,12 @@ import Wrapper from "./boxWrappers";
 const homeAppCom = (props) => {
   return (
     <Wrapper>
-      <div className="flex flex-col text-black h-screen bg-cover bg-center bg-no-repeat bg-[url('//images.samsung.com/is/image/samsung/pk-feature-washer-ww80j5413iw--60875576?$FB_TYPE_A_JPG$')]">
+      <div className="flex flex-col text-black h-screen">
+      <img
+          src={props.home[1]}
+          className="w-5/6 h-[95%] absolute -z-10"
+          alt=""
+        />
         <MiniNav
           MN={props.miniNavs}
           id={props.id}
