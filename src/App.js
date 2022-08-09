@@ -117,7 +117,7 @@ let App = () => {
         },
         {
           id: 1,
-          src: "//images.samsung.com/is/image/samsung/assets/pk/tvs/pcd/AR.jpg?imwidth=1366",
+          src: "https:////images.samsung.com/is/image/samsung/assets/pk/home/QLED_PC.png?$1440_810_JPG$",
           li: "QLED",
         },
         {
