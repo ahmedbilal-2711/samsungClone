@@ -3,11 +3,10 @@
 import { useState } from "react";
 
 let OffersComps = (props) => {
-  // console.log(props,offers[0][0].name);
   const [scale, setScale] = useState("scale-100");
   const [content, setContent] = useState(
     <>
-      <p>{props.offers[0][props.comNo].price}</p>
+      <p className="text-xs">{props.offers[0][props.comNo].price}</p>
     </>
   );
   function hoverOffer() {
@@ -23,7 +22,7 @@ let OffersComps = (props) => {
   function Offer() {
     setContent(
       <>
-        <p>{props.offers[0][props.comNo].price}</p>
+        <p className="text-xs">{props.offers[0][props.comNo].price}</p>
       </>
     );
     setScale("scale-100");
@@ -36,7 +35,7 @@ let OffersComps = (props) => {
       onMouseLeave={Offer}
     >
       <img className={scale} src={props.offers[0][props.comNo].src} alt="" />
-      <p className="font-semibold text-xl">{props.offers[0][props.comNo].name}</p>
+      <p className="font-semibold text-sm text-center">{props.offers[0][props.comNo].name}</p>
       {content}
     </div>
   );

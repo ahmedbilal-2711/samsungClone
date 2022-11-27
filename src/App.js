@@ -170,6 +170,10 @@ let App = () => {
   let handleMobile = (slide) => {
     for (const navs of miniNavs) {
       for (const elem of navs.nav) {
+        if (slide==="TV&amp;AV") {
+          console.log("true");
+          slide="TV&AV";
+        }
         if (elem.li === slide) {
           let comNo = miniNavs.indexOf(navs);
           // eslint-disable-next-line default-case
