@@ -35,7 +35,9 @@ let OffersComps = (props) => {
       onMouseLeave={Offer}
     >
       <img className={scale} src={props.offers[0][props.comNo].src} alt="" />
-      <p className="font-semibold text-sm text-center">{props.offers[0][props.comNo].name}</p>
+      <p className="font-semibold text-sm text-center">
+        {props.offers[0][props.comNo].name}
+      </p>
       {content}
     </div>
   );
