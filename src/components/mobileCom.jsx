@@ -1,8 +1,14 @@
 import MiniNav from "./miniNav";
-import Wrapper from "./boxWrappers";
+import { motion } from "framer-motion";
 const mobileCom = (props) => {
   return (
-    <Wrapper>
+    <motion.div
+      initial={{ x: -120 }}
+      // animate={{ x: 0 }}
+      transition={{ ease: "easeOut", duration: 1 }}
+      whileInView={{ x: 0 }}
+      viewport={{ once: true }}
+    >
       <MiniNav
         MN={props.miniNavs}
         onClickNav={props.onClickMNav}
@@ -21,7 +27,7 @@ const mobileCom = (props) => {
           </button>
         </div>
       </div>
-    </Wrapper>
+    </motion.div>
   );
 };
 

@@ -1,5 +1,4 @@
 // import React, { Component } from "react";
-import Wrapper from "./boxWrappers";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -15,31 +14,22 @@ const ImageSlider = (props) => {
     "//images.samsung.com/pk/galaxy-buds2/feature/galaxy-buds2-key-visual.jpg",
   ];
   return (
-    <Wrapper className="flex justify-center align-middle">
+    <div className="flex justify-center align-middle">
       <Swiper
         navigation={true}
         modules={[Navigation]}
         loop={true}
-        className="mySwiper h-[500px] w-5/6"
+        className="mySwiper h-[530px]"
       >
         {srcArr.map((imgSrc) => {
           return (
-            <SwiperSlide className="h-32 w-screen">
+            <SwiperSlide className="h-36 w-screen">
               <img src={imgSrc} alt="" className="h-screen w-screen" />
             </SwiperSlide>
           );
         })}
       </Swiper>
-      {/* <img src={src[page]} alt="" /> */}
-      {/* <CSSTransition timeout={300} in={forwards} classNames="animate__animated animate_bounce">
-        <img
-          
-          key={src[page]}
-          src={src[page]}
-          className="h-[400px] w-[500px]"
-          />
-          </CSSTransition> */}
-    </Wrapper>
+    </div>
   );
 };
 

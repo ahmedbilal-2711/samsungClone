@@ -1,13 +1,18 @@
 import OFFCOMP from "./offersComps";
 import OffMainComp from "./offersMainComp";
 import MiniNav from "./miniNav";
-import Wrapper from "./boxWrappers";
 import { Component } from "react";
-
+import { motion } from "framer-motion";
 class offers extends Component {
   render() {
     return (
-      <Wrapper>
+      <motion.div
+        initial={{ x: -120 }}
+        // animate={{ x: 0 }}
+        transition={{ ease: "easeOut", duration: 1 }}
+        whileInView={{ x: 0 }}
+        viewport={{ once: true }}
+      >
         <MiniNav
           MN={this.props.miniNavs}
           id={this.props.miniNavs[0].key}
@@ -25,7 +30,7 @@ class offers extends Component {
             ))}
           </div>
         </div>
-      </Wrapper>
+      </motion.div>
     );
   }
 }

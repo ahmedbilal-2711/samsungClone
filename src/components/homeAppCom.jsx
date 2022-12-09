@@ -1,13 +1,19 @@
 // import Space from "./spaceCom";
 import MiniNav from "./miniNav";
-import Wrapper from "./boxWrappers";
+import { motion } from "framer-motion";
 const homeAppCom = (props) => {
   return (
-    <Wrapper>
+    <motion.div
+      initial={{ x: -120 }}
+      // animate={{ x: 0 }}
+      transition={{ ease: "easeOut", duration: 1 }}
+      whileInView={{ x: 0 }}
+      viewport={{ once: true }}
+    >
       <div className="flex flex-col text-black h-screen">
-      <img
+        <img
           src={props.home[1]}
-          className="w-5/6 h-[95%] absolute -z-10"
+          className="w-screen h-[95%] absolute -z-10"
           alt=""
         />
         <MiniNav
@@ -30,7 +36,7 @@ const homeAppCom = (props) => {
           </div>
         </div>
       </div>
-    </Wrapper>
+    </motion.div>
   );
 };
 
